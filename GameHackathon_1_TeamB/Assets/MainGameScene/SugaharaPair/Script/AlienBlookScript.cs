@@ -33,6 +33,7 @@ public class AlienBlookScript : MonoBehaviour
         }
     }
 
+ 
     IEnumerator Alienfall()
     {
         while(true)

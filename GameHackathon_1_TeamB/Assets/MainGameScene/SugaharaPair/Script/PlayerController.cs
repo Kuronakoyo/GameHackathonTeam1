@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float playerSpeed;
 
+    [SerializeField]
+    private float playermovePosMax_x;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,13 +17,21 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+
+        if (gameObject.transform.position.x <= playermovePosMax_x)
         {
-            this.transform.position -= new Vector3(playerSpeed,0,0) ;
+            if (Input.GetKey(KeyCode.D))
+            {
+                this.transform.position += new Vector3(playerSpeed, 0, 0);
+            }
         }
-        if (Input.GetKey(KeyCode.D))
+         if  ( gameObject.transform.position.x >= -playermovePosMax_x)
         {
-            this.transform.position += new Vector3(playerSpeed, 0, 0);
+            if (Input.GetKey(KeyCode.A))
+            {
+                this.transform.position -= new Vector3(playerSpeed, 0, 0);
+            }
+
         }
     }
 }

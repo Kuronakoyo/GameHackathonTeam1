@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class LifeGauge : MonoBehaviour
 {
     //　ライフゲージプレハブ
@@ -14,6 +14,10 @@ public class LifeGauge : MonoBehaviour
     private void Start()
     {
         SetLifeGauge();
+        if(hp <=0)
+        {
+            
+        }
     }
         //private void Update()
         //{
