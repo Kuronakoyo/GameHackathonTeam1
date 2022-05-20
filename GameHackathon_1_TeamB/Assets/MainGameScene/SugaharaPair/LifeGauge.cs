@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class LifeGauge : MonoBehaviour
 {
     //　ライフゲージプレハブ
@@ -14,10 +15,7 @@ public class LifeGauge : MonoBehaviour
     private void Start()
     {
         SetLifeGauge();
-        if(hp <=0)
-        {
-            
-        }
+
     }
         //private void Update()
         //{
@@ -47,6 +45,10 @@ public class LifeGauge : MonoBehaviour
         for (int i = 0; i < hp; i++)
         {
             Instantiate<GameObject>(lifeObj, transform);
+        }
+        if (hp <= 0)
+        {
+            SceneManager.LoadScene("Resultscreen(alien)");
         }
     }
  

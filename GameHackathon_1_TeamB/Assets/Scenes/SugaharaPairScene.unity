@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeObj: {fileID: 3905358640199578671, guid: f3d47cc1809e45e41bb8199fdb0d5c1b, type: 3}
-  hp: 3
+  hp: 1
 --- !u!114 &183764856
 MonoBehaviour:
   m_ObjectHideFlags: 0

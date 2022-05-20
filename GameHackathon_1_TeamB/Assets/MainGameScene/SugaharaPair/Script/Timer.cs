@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
@@ -23,7 +24,7 @@ public class Timer : MonoBehaviour
         timerText.text = seconds.ToString();
         if(totalTime <= 0)
         {
-
+            SceneManager.LoadScene("Resultscreen(Ranger)");   
         }
     }
 }

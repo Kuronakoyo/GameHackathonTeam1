@@ -56,14 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MainGameScene\SugaharaPair\Script\Timer.cs" />
     <Compile Include="Assets\MainGameScene\SugaharaPair\Script\PlayerController.cs" />
     <Compile Include="Assets\MainGameScene\SugaharaPair\Script\MutantBlockCreatorScript.cs" />
     <Compile Include="Assets\MainGameScene\SugaharaPair\Script\AlienCreatorScript.cs" />
     <Compile Include="Assets\MainGameScene\SugaharaPair\Script\AlienBlookScript.cs" />
     <Compile Include="Assets\MainGameScene\SugaharaPair\LifeGauge.cs" />
-    <Compile Include="Assets\MainGameScene\SugaharaPair\StockGauge.cs" />
     <Compile Include="Assets\MainGameScene\SugaharaPair\Script\Ball.cs" />
-    <Compile Include="Assets\MainGameScene\SugaharaPair\Script\Timer.cs" />
+    <Compile Include="Assets\MainGameScene\SugaharaPair\StockGauge.cs" />
+    <Compile Include="Assets\Title\Script\Click.cs" />
+    <Compile Include="Assets\Result\Script\Button.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
